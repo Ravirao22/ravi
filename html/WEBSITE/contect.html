@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #343030;
+            background-image: url(WhatsApp\ Image\ 2024-10-25\ at\ 07.12.24_5dfab5b0.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            /* background-color: rgb(187, 158, 158); */
+            background-color: rgba(168, 148, 148, 0.702);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        .contact-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>

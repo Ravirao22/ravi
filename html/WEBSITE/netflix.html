@@ -1,0 +1,321 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <title>my website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+        integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script src="main.js"></script>
+    <style>
+        :root {
+            --primary: #141414;
+            --light: #F3F3F3;
+            --dark: #686868;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url(WhatsApp\ Image\ 2024-10-25\ at\ 07.12.24_5dfab5b0.jpg);
+            background-size: cover;
+            background-color: var(--primary);
+            color: var(--light);
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            line-height: 1.4;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1 {
+            padding-top: 60px;
+        }
+
+        .wrapper {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER */
+        header {
+            padding: 20px 20px 0 20px;
+            position: fixed;
+            top: 0;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas:
+                "nt mn mn sb . . . ";
+            background-color: var(--primary);
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+        .netflixLogo {
+            grid-area: nt;
+            object-fit: cover;
+            width: 200px;
+            max-height: 100%;
+
+            padding-left: 30px;
+            padding-top: 0px;
+        }
+
+        .netflixLogo img {
+            height: 35px;
+        }
+
+        #logo {
+            color: #E50914;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main-nav {
+            grid-area: mn;
+            padding: 0 30px 0 20px;
+        }
+
+        .main-nav a {
+            color: var(--light);
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .main-nav a:hover {
+            color: var(--dark);
+        }
+
+
+
+
+        /* MAIN CONTIANER */
+        .main-container {
+            padding: 50px;
+        }
+
+        .box {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+        }
+
+        .box a {
+            transition: transform .3s;
+        }
+
+        .box a:hover {
+            transition: transform .3s;
+            -ms-transform: scale(1.4);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+        }
+
+        .box img {
+            border-radius: 2px;
+        }
+
+        /* LINKS */
+
+
+        .sub-links ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .sub-links a {
+            color: var(--dark);
+            text-decoration: none;
+        }
+
+        .sub-links a:hover {
+            color: var(--dark);
+            text-decoration: underline;
+        }
+
+        .logos a {
+            padding: 10px;
+        }
+
+        .logo {
+            color: var(--dark);
+        }
+
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: var(--dark);
+            margin: 10px;
+        }
+
+        /* MEDIA QUERIES */
+
+        @media(max-width: 900px) {
+
+            header {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .box {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(4, minmax(100px, 1fr));
+            }
+
+        }
+
+        @media(max-width: 700px) {
+
+            header {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .box {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(3, minmax(100px, 1fr));
+            }
+
+            .sub-links ul {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        @media(max-width: 500px) {
+
+            .wrapper {
+                font-size: 15px;
+            }
+
+            header {
+                margin: 0;
+                padding: 20px 0 0 0;
+                position: static;
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, 1fr);
+
+                text-align: center;
+            }
+
+            .netflixLogo {
+                max-width: 100%;
+                margin: auto;
+                padding-right: 20px;
+            }
+
+            .main-nav {
+                display: grid;
+                grid-gap: 0px;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 18px;
+            }
+
+
+
+            .box {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+            }
+
+            .box a:hover {
+                transition: transform .3s;
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1.2);
+            }
+
+
+        }
+        .sidebar{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: rgba(167, 56, 56, 0.836) rgba(red, green, blue, alpha);
+            backdrop-filter: blur(10px);
+            box-shadow: 3px;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+             }
+
+        h1 {
+            font-size: larger;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER -->
+
+        <header>
+            <div class="netflixLogo">
+                <a id="logo" href="#home"><img
+                        src="WhatsApp Image 2024-10-25 at 07.12.24_5dfab5b0.jpg"
+                        alt="Logo Image"></a>
+            </div>
+            <nav class="main-nav">
+                <a href="./index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contect.html">Contact Us</a>
+                <a href="signupform.html">Login Now</a>
+                <a href="terms&conditions.html">Terms&Condition</a>
+
+                
+            </nav>
+
+        </header>
+
+
+            <footer>
+                <p>&copy 1997-2018 Netflix, Inc.</p>
+                <p>MADE BY RAVI YADAV</p>
+            </footer>
+    </div> -->
+</body>
+
+</html>
